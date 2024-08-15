@@ -1,0 +1,50 @@
+{
+	"display": {
+		"icon": {
+			"item": "wetsugarcane:waterweed"
+		},
+		"title": {
+			"translate": "advancements.husbandry.breed_a_frog.title"
+		},
+		"description": {
+			"translate": "advancements.husbandry.breed_a_frog.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/breed_an_animal",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:frog"
+						}
+					}
+				],
+				"partner": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:frog"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"recipes": [
+			"wetsugarcane:waterweed"
+		],
+		"experience": 20
+	},
+	"sends_telemetry_event": true
+}

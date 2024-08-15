@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "ark/sugarwater/wetsugarcane/mixin/SugarCaneBlockMixin": {
+      "<init>": "Lnet/minecraft/class_2523;<init>(Lnet/minecraft/class_4970$class_2251;)V",
+      "Lnet/minecraft/util/math/BlockPos;down()Lnet/minecraft/util/math/BlockPos;": "Lnet/minecraft/class_2338;method_10074()Lnet/minecraft/class_2338;",
+      "appendProperties": "Lnet/minecraft/class_2523;method_9515(Lnet/minecraft/class_2689$class_2690;)V",
+      "canPlaceAt": "Lnet/minecraft/class_2523;method_9558(Lnet/minecraft/class_2680;Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z",
+      "getStateForNeighborUpdate": "Lnet/minecraft/class_2523;method_9559(Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;Lnet/minecraft/class_2680;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "ark/sugarwater/wetsugarcane/mixin/SugarCaneBlockMixin": {
+        "<init>": "Lnet/minecraft/class_2523;<init>(Lnet/minecraft/class_4970$class_2251;)V",
+        "Lnet/minecraft/util/math/BlockPos;down()Lnet/minecraft/util/math/BlockPos;": "Lnet/minecraft/class_2338;method_10074()Lnet/minecraft/class_2338;",
+        "appendProperties": "Lnet/minecraft/class_2523;method_9515(Lnet/minecraft/class_2689$class_2690;)V",
+        "canPlaceAt": "Lnet/minecraft/class_2523;method_9558(Lnet/minecraft/class_2680;Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z",
+        "getStateForNeighborUpdate": "Lnet/minecraft/class_2523;method_9559(Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;Lnet/minecraft/class_2680;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;"
+      }
+    }
+  }
+}

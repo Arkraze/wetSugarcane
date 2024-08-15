@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "wetsugarcane",
+	"version": "1.0",
+	"name": "Wet Sugarcane",
+	"description": "Sugarcane in water, and other things too",
+	"authors": [
+		"Ark"
+	],
+	"contact": {
+		"repo": "https://github.com/tjc20/WetSugarcane"
+	},
+	"license": "MIT",
+	"icon": "assets/wetsugarcane/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ark.sugarwater.wetsugarcane.WetSugarcane"
+		]
+	},
+	"mixins": [
+		"wetsugarcane.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"fabric": "*",
+		"minecraft": "1.20.1"
+	}
+}

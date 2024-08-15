@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ark.sugarwater.wetsugarcane.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SugarCaneBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
