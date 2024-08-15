@@ -14,9 +14,9 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 
-public class DuckweedBlock extends FlowerbedBlock {
+public class WaterweedBlock extends FlowerbedBlock {
 	
-	public DuckweedBlock (Settings settings) {
+	public WaterweedBlock (Settings settings) {
 		super(settings);
 		this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(FLOWER_AMOUNT, 1));
 	}

@@ -17,10 +17,10 @@ import net.minecraft.util.Identifier;
 public class WetSugarcane implements ModInitializer {
 	public static final String MODID = "wetsugarcane";
 	
-	private static final Block WATERWEED = Registry.register(Registries.BLOCK,
+	public static final Block WATERWEED = Registry.register(Registries.BLOCK,
 			id("waterweed"),
-			new DuckweedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).sounds(BlockSoundGroup.MOSS_BLOCK).nonOpaque()));
-	private static final Item WATERWEED_ITEM = Registry.register(Registries.ITEM,
+			new WaterweedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).sounds(BlockSoundGroup.MOSS_BLOCK).nonOpaque()));
+	public static final Item WATERWEED_ITEM = Registry.register(Registries.ITEM,
 			id("waterweed"),
 			new AmphibiousPlaceableItem(WATERWEED, new Item.Settings()));
 	
@@ -30,7 +30,7 @@ public class WetSugarcane implements ModInitializer {
 	}
 	
 	@Override public void onInitialize () {
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> entries.addAfter(Items.PINK_PETALS, WATERWEED_ITEM.asItem()));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> entries.addAfter(Items.PINK_PETALS, WATERWEED_ITEM));
 		CompostingChanceRegistry.INSTANCE.add(WATERWEED_ITEM, .3f);
 	}
 }

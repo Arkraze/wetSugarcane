@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
 			"ark.sugarwater.wetsugarcane.WetSugarcane"
+		],
+		"client": [
+			"ark.sugarwater.wetsugarcane.WetSugarcaneClient"
 		]
 	},
 	"mixins": [
