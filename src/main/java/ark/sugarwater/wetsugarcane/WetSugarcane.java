@@ -23,7 +23,7 @@ public class WetSugarcane implements ModInitializer {
 	private static final Item WATERWEED_ITEM = Registry.register(Registries.ITEM,
 			id("waterweed"),
 			new AmphibiousPlaceableItem(WATERWEED, new Item.Settings()));
-	;
+	
 	
 	public static Identifier id (String name) {
 		return Identifier.of(MODID, name);

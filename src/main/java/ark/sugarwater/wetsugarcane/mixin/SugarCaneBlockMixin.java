@@ -1,7 +1,9 @@
 package ark.sugarwater.wetsugarcane.mixin;
 
-import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.SugarCaneBlock;
+import net.minecraft.block.Waterloggable;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
@@ -63,7 +65,7 @@ public abstract class SugarCaneBlockMixin extends Block implements Waterloggable
 	
 	// Display water if waterlogged
 	@Override
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings ("deprecation")
 	public FluidState getFluidState (BlockState state) {
 		return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : state.getFluidState();
 	}
